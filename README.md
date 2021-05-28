@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![completed-design](https://user-images.githubusercontent.com/84497133/119960728-e61aaa80-bfc2-11eb-98c3-75184092738b.png)
 
 ### Links
 
