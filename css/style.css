@@ -1,0 +1,222 @@
+/* CSS Variables */
+:root {
+  --primary-Red: hsl(0, 78%, 62%);
+  --primary-Cyan: hsl(180, 62%, 55%);
+  --primary-Orange: hsl(34, 97%, 64%);
+  --primary-Blue: hsl(212, 86%, 64%);
+
+  --neutral-dark-blue: hsl(234, 12%, 34%);
+  --neutral--Gray-blue: hsl(229, 6%, 66%);
+  --neutral-light-gray: hsl(0, 0%, 98%);
+
+  --primary-ff: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primary-ff);
+}
+
+.container {
+  padding: 5rem 3rem;
+}
+
+/* Header */
+.header {
+  margin-bottom: 7rem;
+  text-align: center;
+}
+
+.heading--light {
+  font-weight: 200;
+  color: var(--neutral--Gray-blue);
+  padding-bottom: 0.5rem;
+}
+.heading--dark {
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.header__text {
+  font-size: 1.5rem;
+  color: var(--neutral--Gray-blue);
+}
+
+/* Main */
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+.section__col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 3.5rem;
+  padding: 1.3rem;
+  border: 1px transparent #fff;
+  border-radius: 5px;
+  box-shadow: 1.5px 2px 15px -5px #000;
+}
+.col--1 {
+  border-top: 2px solid var(--primary-Cyan);
+}
+.col--2 {
+  border-top: 2px solid var(--primary-Red);
+}
+.col--3 {
+  border-top: 2px solid var(--primary-Orange);
+}
+.col--4 {
+  border-top: 2px solid var(--primary-Blue);
+}
+.section__col-heading {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+.section__col-text {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding-bottom: 3rem;
+  color: var(--neutral--Gray-blue);
+}
+.section__col-img {
+  align-self: flex-end;
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media-Queries */
+
+@media screen and (min-width: 40em) {
+  /* 40em/650px */
+  .header {
+    padding: 0 7rem;
+  }
+
+  .header__heading {
+    font-size: 3rem;
+  }
+
+  .header__text {
+    font-size: 1.7rem;
+  }
+
+  /* Main */
+  .section__col-heading {
+    font-size: 2.5rem;
+  }
+
+  .section__col-text {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 56.25em) {
+  /* 900px */
+  /* header */
+  .header {
+    padding: 0 9rem;
+  }
+
+  .header__heading {
+    font-size: 4rem;
+  }
+
+  .header__text {
+    font-size: 2rem;
+  }
+
+  /* Main */
+
+  .section__col-heading {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 62.5em) {
+  /* 68.75em/1100px */
+  /* 62.5/1000 */
+
+  .container {
+    width: 144rem;
+    margin: 0 auto;
+  }
+
+  /* header */
+  .header {
+    margin-bottom: 7rem;
+    text-align: center;
+  }
+
+  .header__heading {
+    font-size: 3.7rem;
+  }
+
+  .header__text {
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+    padding: 0 21rem;
+  }
+
+  /* Main */
+  .main {
+    margin-bottom: 3rem;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 3rem;
+  }
+
+  .section__col {
+    max-width: 35rem;
+    padding: 3.5rem;
+  }
+
+  .section__col-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col--1 {
+    align-self: center;
+  }
+
+  .col--4 {
+    align-self: center;
+  }
+
+  .section__col-heading {
+    font-size: 2.3rem;
+  }
+
+  .section__col-text {
+    font-size: 1.3rem;
+  }
+}
